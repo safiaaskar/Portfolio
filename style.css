@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 60%;
+}
+
+:root {
+    --whit: #fff;
+    --main-color-text: #3a6cf4
+}
+
+section {
+    padding: 2.5rem 13%;
+}
+
+.heading {
+    text-align: center;
+    color: var(--main-color-text);
+    font-size: 3rem;
+    font-weight: 800;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--whit);
+    padding: 1.5rem 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--main-color-text);
+    font-weight: 600;
+}
+
+header .navigation a {
+    color: var(--main-color-text);
+    font-size: 2rem;
+    padding-left: 6rem;
+    font-weight: 500;
+}
+
+header .navigation a:hover {
+    color: #601cfc;
+}
+
+/* main */
+.main {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/blue-wavy-smoke-black-background_23-2148210919.jpg?size=626&ext=jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+}
+
+.main h2 {
+    color: #ffffffcf;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.main h2 span {
+    color: #0045ff;
+    font-size: 4rem;
+}
+
+.main h3 {
+    color: #ffffffcf;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+.main .main-btn {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--whit);
+    background: #0136c6;
+    margin: 2rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    width: 15rem;
+    text-align: center;
+}
+
+.main .main-btn:hover {
+    transform: scale(1.1);
+    background: #0031b4;
+}
+
+.social-icons a {
+    color: var(--whit);
+    margin-right: 2rem;
+    margin-left: 0.3rem;
+    font-size: 1.8rem;
+}
+
+/* services */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.cards .card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
+    border: 1rem solid #fff;
+    width: 24rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.cards .card:hover {
+    transform: scale(1.1);
+}
+
+.cards .card i {
+    font-size: 10rem;
+    padding-bottom: 3rem;
+    color: var(--main-color-text)
+}
+
+.cards .services-content .card h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #0045ffb8;
+}
+
+.cards .card p {
+    color: #666;
+}
+
+/* projects */
+.projects {
+    background: black;
+    position: relative;
+    margin-top: 6rem;
+    padding-bottom: 7rem;
+}
+
+.projects .content {
+    gap: 3.5rem;
+    margin-top: 5rem;
+}
+
+.projects .card {
+    width: 35rem;
+    border: .1rem solid #fff;
+    border-radius: 0.5rem;
+    background: var(--whit);
+    overflow: hidden;
+}
+
+.projects .card:hover {
+    transform: scale(1.1);
+}
+
+.projects .card .project-image img {
+    width: 100%;
+}
+
+.projects .card:hover .project-image {
+    opacity: 0.;
+}
+
+.projects .card .info {
+    padding: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+}
+
+.projects .card .info div {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.projects .card .info .project-btn {
+    color: var(--main-color-text);
+}
+
+.projects .card .info .project-btn:hover {
+    color: #601cfc;
+    text-decoration: underline;
+}
+
+/* contact */
+.contact .card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .3);
+    border: 1rem solid #fff;
+    width: 24rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.contact .card:hover {
+    transform: scale(1.1);
+}
+
+.contact .card i {
+    font-size: 10rem;
+    padding-bottom: 3rem;
+    color: var(--main-color-text)
+}
+
+.contact .card h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #0045ffb8;
+}
+
+.contact .card p,
+.contact .card a {
+    color: #666;
+}
+
+/* footer */
+footer {
+    background: black;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    color: var(--whit);
+    text-transform: capitalize;
+    letter-spacing: 0.001rem;
+
+}
+
+footer span {
+    color: var(--main-color-text);
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 30%;
+    }
+
+    .cards .services-content .card {
+        width: 31rem;
+    }
+}
